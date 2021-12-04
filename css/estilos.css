@@ -283,7 +283,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
     padding: 20px 10px;
-    background: tomato;
+    background: cornflowerblue;
     grid-column-start: 1;
     grid-column-end: 3;
 }
@@ -304,7 +304,7 @@
 
 .main__derecha, .main__izquierda{
     padding: 1rem 1.2rem;
-    background-color: tomato;
+    background-color: cornflowerblue;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -316,8 +316,8 @@
 }
 
 
-.body--tomato{
-    background-color: tomato;
+.body--cornflowerblue{
+    background-color: cornflowerblue;
 }
 
 
