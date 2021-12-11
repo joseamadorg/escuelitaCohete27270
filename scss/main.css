@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Solid&family=Roboto:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header {
+  background-color: white;
+  padding: 20px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__logo {
+  max-width: 100%;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.header__logo:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.header__list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__item {
+  margin: 0px 10px;
+}
+
+.header__link {
+  background: transparent;
+  border-bottom: solid 2px #F25f27;
+  padding: 12px 8px;
+  text-decoration: none;
+  color: #F25f27;
+  font-family: 'Londrina Solid', cursive;
+  -webkit-transition: background 0.5s, color 0.4s;
+  transition: background 0.5s, color 0.4s;
+  font-size: 1.4rem;
+  display: block;
+}
+
+.header__link:hover {
+  background: #F25f27;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.hero {
+  background-image: url("../img/nene-hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero__contenedor {
+  color: white;
+  position: relative;
+  left: 30px;
+  padding: 20px 15px;
+  border-radius: 15px;
+  width: 550px;
+}
+
+.hero__titulo {
+  font-family: 'Londrina Solid', cursive;
+  font-weight: 400;
+  font-size: 15rem;
+}
+
+.separador {
+  background: #5222d0;
+  background: linear-gradient(324deg, #5222d0 4%, #441cac 48%, black 86%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5222d0",endColorstr="#000000",GradientType=1);
+  height: 8px;
+  border: none;
+}
