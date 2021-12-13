@@ -1,0 +1,46 @@
+/*ESTILOS MOVILES*/
+@media  screen and (max-width: 768px) {
+    .equipo__contenedor, .footer, .header, .complementoMain, .complementoEquipo__contenedor {
+        flex-wrap: wrap;
+    }
+    .complementoEquipo{
+        padding: 0px 0px;
+    }
+
+    .complementoMain__contenedor{
+        flex-basis: 100%;
+        padding: 20px 10px;
+    }
+
+    .header {
+        justify-content: center;
+    }
+    .hero__titulo{
+        font-size: 1.75rem;
+    }
+    .hero__contenedor{
+        left: 0px;
+    }
+    .header__list{
+        flex-direction: column;
+    }
+    .main--grid {
+        grid-template-columns: auto;
+        gap: 0px; 
+    }
+
+    .sub__grid {
+        grid-template-columns: auto;
+    }
+    .sub--div{
+        padding: 1rem;
+    }
+}
+
+/*ESTILOS DESKTOP*/
+@media screen and (min-width: 768px){
+    .header__list{
+        flex-direction: row;
+    }
+    
+} 

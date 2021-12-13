@@ -87,7 +87,60 @@
 .hero__titulo {
   font-family: 'Londrina Solid', cursive;
   font-weight: 400;
-  font-size: 15rem;
+  font-size: 5rem;
+}
+
+.complementoMain {
+  color: white;
+  background-color: #001F45;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.complementoMain__contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding: 60px 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.complementoMain__video {
+  width: 100%;
+}
+
+.complementoMain__titulo {
+  font-family: 'Londrina Solid', cursive;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.complementoMain__parrafo {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .footer__columna {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
 }
 
 .separador {
@@ -96,4 +149,68 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5222d0",endColorstr="#000000",GradientType=1);
   height: 8px;
   border: none;
+}
+
+.btn {
+  background-color: #FF0033;
+  border: none;
+  color: white;
+  padding: 12px 8px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/*ESTILOS MOVILES*/
+@media screen and (max-width: 768px) {
+  .equipo__contenedor, .footer, .header, .complementoMain, .complementoEquipo__contenedor {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .complementoEquipo {
+    padding: 0px 0px;
+  }
+  .complementoMain__contenedor {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding: 20px 10px;
+  }
+  .header {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .hero__titulo {
+    font-size: 1.75rem;
+  }
+  .hero__contenedor {
+    left: 0px;
+  }
+  .header__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main--grid {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    gap: 0px;
+  }
+  .sub__grid {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  .sub--div {
+    padding: 1rem;
+  }
+}
+
+/*ESTILOS DESKTOP*/
+@media screen and (min-width: 768px) {
+  .header__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }

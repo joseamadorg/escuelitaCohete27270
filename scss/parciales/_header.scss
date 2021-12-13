@@ -1,9 +1,9 @@
 @import "./vars"; 
 
 .header{
-    background-color: hsl(0, 0%, 100% );
+    background-color: hsl(0, 0%, 100%);
     padding: 20px 10px;
-    display: flex;
+    display: $flexible;
     align-items: center;
     justify-content: space-between;
 
@@ -17,7 +17,7 @@
     
     &__list{
         list-style: none;
-        display: flex; 
+        display: $flexible; 
     }
     
     &__item{
@@ -42,3 +42,4 @@
     }
 
 }
+

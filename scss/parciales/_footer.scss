@@ -1,0 +1,9 @@
+@import "./vars";
+
+.footer{
+    display: $flexible;
+    .footer__columna{
+        flex-basis: 100%;
+    }
+}
+
