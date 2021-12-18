@@ -160,6 +160,13 @@
   cursor: pointer;
 }
 
+.header-interno img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 /*ESTILOS MOVILES*/
 @media screen and (max-width: 768px) {
   .equipo__contenedor, .footer, .header, .complementoMain, .complementoEquipo__contenedor {
