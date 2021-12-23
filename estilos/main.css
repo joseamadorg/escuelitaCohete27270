@@ -154,6 +154,7 @@
       -ms-flex-direction: row;
           flex-direction: row;
   font-family: 'Roboto', sans-serif;
+  overflow: hidden;
 }
 
 .equipo__titulo--grande {
