@@ -1,10 +1,15 @@
-@import "./parciales/vars"; 
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&family=Roboto:wght@300;400;700&display=swap');
+@import "./parciales/vars"; 
 @import "./parciales/reset"; 
 @import "./parciales/header";
 @import "./parciales/main"; 
+@import "./parciales/equipo";
+
+
+
 @import "./parciales/footer";
 @import "./parciales/componentes"; 
+@import "./parciales/utilitarias";
 @import "./parciales/resposive"; 
 
 

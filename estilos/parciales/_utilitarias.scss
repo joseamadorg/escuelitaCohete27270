@@ -1,0 +1,35 @@
+$azul: hsl(213, 100%, 14%);
+$rojo: hsl(348, 100%, 50%);
+$rosa: hsl(338, 100%, 41%);
+$gris: hsl(216, 25%, 34%);
+
+$colores: (
+    "azul": $azul, 
+    "rojo": $rojo,  
+    "rosa": $rosa, 
+    "gris": $gris  
+);
+
+@each $name, $color in $colores {
+    .equipo__img--#{$name} {
+        border: 10px solid $color; 
+    }
+    
+}
+
+
+
+
+
+
+
+@each $deporte in Hockey, Futbol, Rugby, Natacion, Tenis, Basquet {
+    .imgPortadaDeporte#{$deporte} {
+        width: 100%;
+        background-image: url(../img/portada#{$deporte}.jpg);
+        background-position: center;
+        background-size: cover;
+        min-height: 550px;
+        position: relative;
+    }
+}

@@ -7,12 +7,6 @@
     box-sizing: border-box;
 }
 
-
-
-.heroe{
-    height: 40vh;
-}
-
 .separador{
     background: rgb(82,34,208);
     background: -moz-linear-gradient(324deg, rgba(82,34,208,1) 4%, rgba(68,28,172,1) 48%, rgba(0,0,0,1) 86%);

@@ -132,15 +132,152 @@
   line-height: 1.8;
 }
 
+.equipo {
+  background-color: #FF6E00;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 60px 40px;
+}
+
+.equipo__contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-family: 'Roboto', sans-serif;
+}
+
+.equipo__titulo--grande {
+  font-family: 'Londrina Solid', cursive;
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.equipo__miembro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px 10px;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.equipo__img {
+  width: 100%;
+  border-radius: 50%;
+  max-width: 160px;
+  height: 160px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: auto;
+}
+
+.complementoEquipo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 60px 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.complementoEquipo__contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 20px;
+}
+
+.complementoEquipo__img {
+  width: 100%;
+}
+
+.complementoEquipo__contenedor--texto {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 100%;
+}
+
+.complementoEquipo__titulo {
+  font-family: 'Londrina Solid', cursive;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.complementoEquipo__parrafo {
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 60px 40px;
+  background-color: #fff;
 }
 
-.footer .footer__columna {
+.footer__columna {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__logo {
+  max-width: 200px;
+  margin: auto;
+}
+
+.footer__list {
+  list-style: none;
+}
+
+.footer__list a {
+  text-decoration: none;
+  margin: 10px 0px;
+  display: inline-block;
 }
 
 .separador {
@@ -160,11 +297,74 @@
   cursor: pointer;
 }
 
-.header-interno img {
+.equipo__img--azul {
+  border: 10px solid #002047;
+}
+
+.equipo__img--rojo {
+  border: 10px solid #ff0033;
+}
+
+.equipo__img--rosa {
+  border: 10px solid #d1004d;
+}
+
+.equipo__img--gris {
+  border: 10px solid #41526c;
+}
+
+.imgPortadaDeporteHockey {
   width: 100%;
-  height: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  background-image: url(../img/portadaHockey.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 550px;
+  position: relative;
+}
+
+.imgPortadaDeporteFutbol {
+  width: 100%;
+  background-image: url(../img/portadaFutbol.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 550px;
+  position: relative;
+}
+
+.imgPortadaDeporteRugby {
+  width: 100%;
+  background-image: url(../img/portadaRugby.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 550px;
+  position: relative;
+}
+
+.imgPortadaDeporteNatacion {
+  width: 100%;
+  background-image: url(../img/portadaNatacion.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 550px;
+  position: relative;
+}
+
+.imgPortadaDeporteTenis {
+  width: 100%;
+  background-image: url(../img/portadaTenis.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 550px;
+  position: relative;
+}
+
+.imgPortadaDeporteBasquet {
+  width: 100%;
+  background-image: url(../img/portadaBasquet.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 550px;
+  position: relative;
 }
 
 /*ESTILOS MOVILES*/
