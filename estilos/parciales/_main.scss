@@ -1,3 +1,5 @@
+@import "./media-queries"; 
+
 .hero{
     background-image: url("../img/nene-hero.jpg");
     background-size: cover;
@@ -13,11 +15,22 @@
         padding: 20px 15px;
         border-radius: 15px; 
         width: 550px;
+        @include tablet{
+        left: 00px; 
+        padding: 10px 5px;
+        }
+        
     }
     &__titulo{
         font-family: 'Londrina Solid', cursive;
         font-weight: 400;
         font-size: $font-size;
+        @include tablet {
+            font-size: $font-size - 1.2rem;
+        }
+        @include movil{
+            font-size: $font-size - 2rem;
+        }
     }
 }
 
@@ -25,12 +38,19 @@
     color: white; 
     background-color: $color-secundario;
     display: $flexible;
+    @include tablet{
+        flex-wrap: wrap;
+    }
     &__contenedor{
         display: $flexible;
         flex-direction: column;
         flex-basis: 50%;
         padding: 60px 40px;
         justify-content: center;
+        @include tablet{
+            flex-basis: 100%;
+            padding: 20px 10px;
+        }
     }
     &__video{
         width: 100%;

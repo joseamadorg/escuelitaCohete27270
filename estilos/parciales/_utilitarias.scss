@@ -15,21 +15,8 @@ $colores: (
         border: 10px solid $color; 
     }
     
-}
+} 
 
 
 
 
-
-
-
-@each $deporte in Hockey, Futbol, Rugby, Natacion, Tenis, Basquet {
-    .imgPortadaDeporte#{$deporte} {
-        width: 100%;
-        background-image: url(../img/portada#{$deporte}.jpg);
-        background-position: center;
-        background-size: cover;
-        min-height: 550px;
-        position: relative;
-    }
-}

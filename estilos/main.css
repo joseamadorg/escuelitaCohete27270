@@ -20,6 +20,19 @@
           justify-content: space-between;
 }
 
+@media screen and (max-width: 768px) {
+  .header {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .header__logo {
   max-width: 100%;
   -webkit-transition: all 1s;
@@ -36,6 +49,15 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .header__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .header__item {
@@ -84,10 +106,29 @@
   width: 550px;
 }
 
+@media screen and (max-width: 768px) {
+  .hero__contenedor {
+    left: 00px;
+    padding: 10px 5px;
+  }
+}
+
 .hero__titulo {
   font-family: 'Londrina Solid', cursive;
   font-weight: 400;
   font-size: 5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .hero__titulo {
+    font-size: 3.8rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .hero__titulo {
+    font-size: 3rem;
+  }
 }
 
 .complementoMain {
@@ -96,6 +137,13 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .complementoMain {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .complementoMain__contenedor {
@@ -112,6 +160,14 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .complementoMain__contenedor {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding: 20px 10px;
+  }
 }
 
 .complementoMain__video {
@@ -155,6 +211,13 @@
           flex-direction: row;
   font-family: 'Roboto', sans-serif;
   overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .equipo__contenedor {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .equipo__titulo--grande {
@@ -216,6 +279,13 @@
   gap: 20px;
 }
 
+@media screen and (max-width: 768px) {
+  .complementoEquipo__contenedor {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .complementoEquipo__img {
   width: 100%;
 }
@@ -246,6 +316,13 @@
   display: flex;
   padding: 60px 40px;
   background-color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .footer__columna {
@@ -312,113 +389,4 @@
 
 .equipo__img--gris {
   border: 10px solid #41526c;
-}
-
-.imgPortadaDeporteHockey {
-  width: 100%;
-  background-image: url(../img/portadaHockey.jpg);
-  background-position: center;
-  background-size: cover;
-  min-height: 550px;
-  position: relative;
-}
-
-.imgPortadaDeporteFutbol {
-  width: 100%;
-  background-image: url(../img/portadaFutbol.jpg);
-  background-position: center;
-  background-size: cover;
-  min-height: 550px;
-  position: relative;
-}
-
-.imgPortadaDeporteRugby {
-  width: 100%;
-  background-image: url(../img/portadaRugby.jpg);
-  background-position: center;
-  background-size: cover;
-  min-height: 550px;
-  position: relative;
-}
-
-.imgPortadaDeporteNatacion {
-  width: 100%;
-  background-image: url(../img/portadaNatacion.jpg);
-  background-position: center;
-  background-size: cover;
-  min-height: 550px;
-  position: relative;
-}
-
-.imgPortadaDeporteTenis {
-  width: 100%;
-  background-image: url(../img/portadaTenis.jpg);
-  background-position: center;
-  background-size: cover;
-  min-height: 550px;
-  position: relative;
-}
-
-.imgPortadaDeporteBasquet {
-  width: 100%;
-  background-image: url(../img/portadaBasquet.jpg);
-  background-position: center;
-  background-size: cover;
-  min-height: 550px;
-  position: relative;
-}
-
-/*ESTILOS MOVILES*/
-@media screen and (max-width: 768px) {
-  .equipo__contenedor, .footer, .header, .complementoMain, .complementoEquipo__contenedor {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .complementoEquipo {
-    padding: 0px 0px;
-  }
-  .complementoMain__contenedor {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-    padding: 20px 10px;
-  }
-  .header {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .hero__titulo {
-    font-size: 1.75rem;
-  }
-  .hero__contenedor {
-    left: 0px;
-  }
-  .header__list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .main--grid {
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
-    gap: 0px;
-  }
-  .sub__grid {
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
-  }
-  .sub--div {
-    padding: 1rem;
-  }
-}
-
-/*ESTILOS DESKTOP*/
-@media screen and (min-width: 768px) {
-  .header__list {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
 }

@@ -1,4 +1,5 @@
 @import "./vars"; 
+@import "./media-queries";
 
 .header{
     background-color: hsl(0, 0%, 100%);
@@ -6,6 +7,11 @@
     display: $flexible;
     align-items: center;
     justify-content: space-between;
+    @include tablet{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
 
     &__logo{
         max-width: 100%;
@@ -18,6 +24,9 @@
     &__list{
         list-style: none;
         display: $flexible; 
+        @include tablet {
+            flex-direction: column;
+        }
     }
     
     &__item{

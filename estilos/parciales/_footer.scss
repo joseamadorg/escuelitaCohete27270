@@ -1,9 +1,13 @@
 @import "./vars";
+@import "./media-queries";
 
 .footer{
     display: $flexible;
     padding: 60px 40px;
     background-color: #fff;
+    @include tablet{
+        flex-wrap: wrap;
+    }
         
     &__columna{
         flex-basis: 100%;
